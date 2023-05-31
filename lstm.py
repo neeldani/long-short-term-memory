@@ -94,6 +94,8 @@ class LSTM:
             # dense layer
             self.weights["Wd"] = np.random.randn(n_out, n_hidden)
             self.weights["bd"] = np.random.randn(n_out, 1)
+        else:
+            self.weights = weights
         
         self.model = [ LSTMCell() for _ in range(self.n_timestamps)]
         
