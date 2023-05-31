@@ -73,6 +73,7 @@ class LSTM:
             y_preds.append(y_pred)
 
         return y_preds
+    
     def __init__(self, n_in, n_hidden, n_out, n_timestamps, weights=None):
         self.n_in = n_in
         self.n_hidden = n_hidden
